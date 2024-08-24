@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karen Bialescki Stackoski">
+    <meta name="description" content="Mega Sena">
+    <link rel="stylesheet" href="./index.css">
+    <title>Mega Sena</title>
+</head>
+<body>
+    <header>
+        <h1>Mega Sena</h1>
+    </header>
+    <main>
+        <h2>Saiba qual o último resultado da sua loteria favorita:</h2>
+        <label for="loteria">Loteria</label>
+        <select name="loteria" id="loteria">
+            <option value="">Selecione uma loteria</option>
+        </select>
+        <button id="pesquisaLoterias">Pesquisar</button>
+        <div id="latest"></div>
+
+        <h2>Compre o seu ticket!</h2>
+        <form action="submit" id="buyTicket">
+            <p>Selecione até 12 números</p>
+            <div id="numbers"></div>
+            <button type="submit" id="comprar">Comprar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Este site foi criado por <a href="https://github.com/KarenStackoski" target="_blank">Karen Stackoski</a></p>
+    </footer>
+    <script src="./index.js" defer></script>
+</body>
+</html>
